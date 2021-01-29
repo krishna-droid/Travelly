@@ -1,0 +1,302 @@
+
+/*global styling*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+p,
+input {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4,
+h5 {
+  font-size: 2rem;
+}
+
+/*First page*/
+a {
+  color: white;
+  text-decoration: none;
+}
+.main-head {
+  background-color: #172331;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+nav {
+  min-height: 10vh;
+  padding: 2rem;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 30rem;
+  justify-content: space-around;
+  list-style: none;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+.hero {
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/Image/landing-page.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h3 {
+  padding: 2rem;
+  font-weight: normal;
+}
+button {
+  padding: 1rem 4rem;
+  border: none;
+  color: white;
+  background: rgb(9, 76, 121);
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+button:hover {
+  background: rgb(6, 50, 80);
+}
+
+/*location*/
+#location {
+  min-height: 100vh;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), transparent),
+    url(/Image/new-york-page.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.location-head {
+  width: 90%;
+  margin: auto;
+}
+.location-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+.location-head h3 {
+  padding: 3rem 0rem;
+  background: linear-gradient(rgb(0, 0, 0), rgb(129, 34, 34));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.moving-cloud-1 {
+  animation: cloudanimation 4s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: cloudanimation 4.2s infinite alternate ease-in-out;
+}
+@keyframes cloudanimation {
+  from {
+    transform: translate(10%, -15%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/*Benefits*/
+#benefits {
+  min-height: 100vh;
+}
+.benefits-head {
+  background: #172331;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.benefits-head h3 {
+  font-size: 2.8rem;
+  padding: 1rem;
+  font-weight: normal;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  min-height: 40vh;
+  flex: 1 1 25rem;
+  margin: 2rem 5rem;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 20px rgb(0, 0, 0, 0.2);
+}
+.cards img {
+  height: 100px;
+  padding: 1rem;
+}
+.cards h4 {
+  padding: 1.5rem;
+}
+.cards p {
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
+  line-height: 2;
+}
+.card-icon {
+  background: rgb(9, 76, 121);
+}
+#contact {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/Image/contact-mountain.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.class-wrapper {
+  width: 30%;
+  background: rgba(23, 35, 49, 0.8);
+  border-radius: 2rem;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.name-form,
+.email-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  flex-wrap: wrap;
+}
+.class-wrapper label {
+  margin: 0rem 3rem;
+}
+.class-wrapper button {
+  margin-top: 3rem;
+  width: 100%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 1.2rem;
+}
+.class-wrapper label {
+  padding: 0.5rem;
+}
+footer {
+  min-height: 10vh;
+  background-color: rgba(23, 35, 49);
+}
+.foot {
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+}
+.foot ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+}
+.foot h5 {
+  flex: 1 1 40rem;
+  align-items: center;
+}
+button:focus {
+  background: rgb(7, 46, 71);
+}
+
+/*Mobile*/
+@media screen and (max-width: 932px) {
+  nav {
+    text-align: center;
+  }
+  html {
+    font-size: 45%;
+  }
+  #logo {
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+  .cloud {
+    height: 50rem;
+    pointer-events: none;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+    opacity: 0;
+  }
+  .location-head h3 {
+    background: rgba(23, 35, 49, 0.8);
+    -webkit-text-fill-color: white;
+    padding-left: 1rem;
+  }
+  .location-head h2 {
+    padding-bottom: 5rem;
+  }
+  .class-wrapper {
+    width: 90%;
+  }
+}

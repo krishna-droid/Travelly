@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelly | Travel Agency</title>
+    <meta name="description" content="This is the travel agency websites to travel all over the world"/>
+    <meta name="robots" content="index,follow"/>
+    <link rel="icon" href="/Icons/iconmonstr-airport-7.svg"/>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header class="main-head">
+        <nav>
+            <h1 id="logo">Travelly</h1>
+            <ul>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <section class="hero">
+        <h2>Travel beyond limits</h2>
+        <h3>Start your travel at your affortable price<br/>contact us now.</h3>
+        <button>Book now</button>
+    </section>
+    <section id="location"> 
+        <header class="location-head">
+            <h2>The perfect travelling experience.</h2>
+            <h3>We cover everything from picking a perfect hotel,<br/>flight and travelling destination.</h3>
+            <img src="Image/cloud.png" class="moving-cloud-1 cloud" alt=""/>
+            <img src="Image/cloud.png" class="moving-cloud-2 cloud" alt=""/>
+        </header>
+    </section>
+    <section id="benefits">
+        <header class="benefits-head">
+            <h2>The perfect travel</h2>
+            <h3>We cover everything from picking up a hotel,<br/>fight and your favourite destination.</h3>
+        </header>
+        <div class="cards">
+          <div class="card">
+              <div class="card-icon">
+              <img src="/Icons/delivery.svg">
+              </div>
+              <h4>Travel</h4>
+              <p>Travel in over 250 countrie with no efforts.</p>
+          </div>
+          <div class="card">
+              <div class="card-icon">
+              <img src="Icons/bed.svg">
+          </div>
+              <h4>Hotel</h4>
+              <p>Hotels located near to popular near.</p>
+          </div>
+          <div class="card">
+              <div class="card-icon">
+              <img src="Icons/departure.svg">
+          </div>
+              <h4>Fly</h4>
+              <p>Fight ticket include in your purchase.</p>
+          </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="class-wrapper">
+            <header class="head">
+                <h3>Contact Us</h3>
+            </header>
+            <form action="https://formspree.io/f/mjvpodld" method="POST">
+                <div class="name-form">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="name" required >
+                </div>
+                <div class="email-form">
+                    <label for="email">Email:</label>  
+                    <input  id="email" type="email" name="_replyto" required>      
+                </div>
+            <button value="Send" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    </main>
+    <footer>
+       <div class="foot">
+         <h5>Tarvelly &copy;</h5> 
+          <ul>
+              <li><a href="#" title="whatsapp"><img src="/Icons/iconmonstr-whatsapp-1.svg" alt="whatsapp"></a></li>
+              <li><a href="#" title="youtube"><img src="/Icons/iconmonstr-youtube-6.svg" alt="youtube"></a></li>
+          </ul>
+       </div>
+    </footer>
+    
+</body>
+</html>
